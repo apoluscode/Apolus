@@ -511,7 +511,7 @@ const Portfolio = () => {
       category: 'Landing Page',
       image:
         '/img/portf/portf_1.png',
-      link: 'https://victor-araujo-advogado.vercel.app/',
+      link: 'https://victor-araujo-advogado-sepia.vercel.app/',
     },
 
   ];
