@@ -17,6 +17,11 @@ import {
   Smartphone,
   Globe,
   Instagram,
+  MonitorSmartphone,
+  ShoppingCart,
+  Package,
+  LayoutDashboard,
+  ShieldCheck,
 } from 'lucide-react';
 import { useState, useEffect, FormEvent } from 'react';
 
@@ -38,6 +43,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Sobre', href: '#sobre' },
+    { name: 'Tecnologias', href: '#tecnologias' },
     { name: 'Serviços', href: '#servicos' },
     { name: 'Portfólio', href: '#portfolio' },
     { name: 'Processo', href: '#processo' },
@@ -132,21 +138,16 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-apolus-purple/20 border border-apolus-purple/30 text-apolus-purple text-xs font-bold uppercase tracking-widest mb-6">
-            <span className="w-2 h-2 bg-apolus-purple rounded-full animate-pulse" />
-            Freelance Squad
-          </div>
+
 
           <h1 className="text-5xl lg:text-7xl font-display font-bold leading-[1.05] mb-6">
-            Transformamos ideias em{' '}
-            <span className="relative inline-block">
-              <img
-                src="/img/font/e_font.png"
-                alt="experiências"
-                className="inline-block h-[65px] lg:h-[95px] drop-shadow-2xl"
-              />
-              <span className="absolute inset-0 bg-apolus-yellow/7 blur-xl -z-10 rounded-full" />
-            </span>{' '}
+            Transformamos
+            <br />
+            ideias em{" "}
+            <span className="text-apolus-green">
+              experiências
+            </span>
+            <br />
             digitais.
           </h1>
 
@@ -171,94 +172,62 @@ const Hero = () => {
             </a>
           </div>
         </motion.div>
-
-        {/* UNIVERSO + MASCOTE */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           className="relative flex justify-center"
         >
-          <div className="relative w-full max-w-md aspect-square">
-            {/* PLANETA GIRANDO ATRÁS */}
-            <motion.img
-              src="/img/apolus/internet_trans.png"
-              className="absolute top-3 left-[8px] w-full h-full object-contain z-0 opacity-50  drop-shadow-[0_0_20px_purple]"
-              animate={{
-                rotate: -360,
-              }}
-              style={{ scale: 0.95 }}
-              transition={{
-                duration: 50,
-                repeat: Infinity,
-                ease: 'linear',
-              }}
-            />
-
+          <motion.img
+            src="/img/apolus/internet_trans.png"
+            className="absolute top-3 left-[8px] w-full h-full object-contain z-0 opacity-50  drop-shadow-[0_0_20px_purple]"
+            animate={{
+              rotate: -360,
+            }}
+            style={{ scale: 0.95 }}
+            transition={{
+              duration: 50,
+              repeat: Infinity,
+              ease: 'linear',
+            }}
+          />
+          <div className="relative w-full max-w-3xl aspect-square">
             {/* ELEMENTOS DO UNIVERSO */}
             <svg
               viewBox="0 0 500 500"
               className="absolute -inset-9 w-[120%] h-[120%] z-5"
             >
-              {/* Anel orbital */}
-              <motion.circle
-                cx="250"
-                cy="250"
-                r="240"
-                fill="none"
-                stroke="#236506"
-                strokeOpacity="0.3"
-                strokeWidth="2"
-                strokeDasharray="8 10"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                style={{ originX: '50%', originY: '50%' }}
-              />
-
-              {/* estrelas */}
-              <motion.circle
-                cx="250"
-                cy="30"
-                r="6"
-                fill="#FFC300"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
-                style={{ originX: '250px', originY: '250px' }}
-              />
-              {/* estrelas */}
-              <motion.circle
-                cx="250"
-                cy="30"
-                r="6"
-                fill="#FFC300"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
-                style={{ originX: '-250px', originY: '-250px' }}
-              />
             </svg>
 
             {/* CHÃO DE LUZ */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-72 h-24 bg-apolus-green/30 blur-2xl rounded-full opacity-60" />
 
-            {/* MASCOTE */}
+            {/* MOCKUP */}
             <motion.img
-              src="/img/apolus/apolus_trans.png"
-              className="absolute inset-0 w-[70%] h-[70%] object-contain z-10 mx-auto my-auto"
+              src="/img/apolus/webdesign.png"
+              className="absolute inset-0 w-full h-full object-contain z-10"
               animate={{
                 y: [0, -20, 0],
                 rotate: [0, 2, -2, 0],
               }}
+              style={{ scale: 1.1 }}
               transition={{
                 duration: 4,
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
+
             />
+
 
             {/* GLOW FRONTAL */}
             <div className="absolute inset-0 bg-apolus-purple/20 blur-3xl -z-10 rounded-full" />
           </div>
         </motion.div>
+
+
+
+
       </div>
     </section>
   );
@@ -331,7 +300,7 @@ const About = () => {
                 <img
                   src="/img/devs/kaique_card.png"
                   alt="Kaique - Desenvolvedor Front-end"
-                  className="relative rounded-2xl w-full aspect-square object-cover grayscale group-hover:grayscale-0 transition duration-500"
+                  className="relative rounded-2xl w-full aspect-square object-cover  group-hover:grayscale-0 transition duration-500"
                 />
               </div>
 
@@ -352,7 +321,7 @@ const About = () => {
                 </a>
               </div>
               <h3 className="font-bold text-lg">Kaique Fernandes</h3>
-              <p className="text-sm text-white/60 mt-1">Front-end</p>
+
             </div>
 
             {/* Fabiano */}
@@ -363,7 +332,7 @@ const About = () => {
                 <img
                   src="/img/devs/fabiano_card.png"
                   alt="Nome - Desenvolvedor"
-                  className="relative rounded-2xl w-full aspect-square object-cover grayscale group-hover:grayscale-0 transition duration-500"
+                  className="relative rounded-2xl w-full aspect-square object-cover  group-hover:grayscale-0 transition duration-500"
                 />
               </div>
               {/*Redes Sociais - Fabiano*/}
@@ -382,7 +351,6 @@ const About = () => {
                 </a>
               </div>
               <h3 className="font-bold text-lg">Fabiano Santos</h3>
-              <p className="text-sm text-white/60 mt-1">Back-end</p>
             </div>
           </div>
         </div>
@@ -392,7 +360,7 @@ const About = () => {
 };
 
 /* Tecnologias e Competências */
-const Services = () => {
+const Technologies = () => {
   const technologies = [
     {
       title: 'Planejamento, Versionamento & Colaboração',
@@ -451,7 +419,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-24">
+    <section id="tecnologias" className="py-24">
       <div className="max-w-8xl mx-auto px-14">
         {/* Título da seção "Tecnologias & Competências" */}
         <div className="text-center mb-16 flex flex-col items-center">
@@ -502,7 +470,99 @@ const Services = () => {
       </div>
     </section>
   );
+
+
 };
+const Services = () => {
+  const services = [
+    {
+      icon: <MonitorSmartphone size={32} />,
+      title: 'Landing Pages',
+      description:
+        'Páginas modernas e focadas em conversão para campanhas, produtos e captação de clientes.',
+    },
+    {
+      icon: <Globe size={32} />,
+      title: 'Site Institucional',
+      description:
+        'Sites profissionais para apresentar sua empresa, serviços e fortalecer sua presença digital.',
+    },
+    {
+      icon: <Package size={32} />,
+      title: 'Catálogo de Produtos',
+      description:
+        'Exiba seus produtos com sistema de busca, painel administrativo e gerenciamento completo.',
+    },
+    {
+      icon: <ShoppingCart size={32} />,
+      title: 'Loja Virtual',
+      description:
+        'E-commerce completo com carrinho, pagamentos, painel administrativo e gestão de pedidos.',
+    },
+    {
+      icon: <LayoutDashboard size={32} />,
+      title: 'Sistema Web',
+      description:
+        'Sistemas personalizados com login, banco de dados, automações e áreas administrativas.',
+    },
+    {
+      icon: <ShieldCheck size={32} />,
+      title: 'Suporte & Manutenção',
+      description:
+        'Atualizações, monitoramento, correções e suporte contínuo após a entrega do projeto.',
+    },
+  ];
+
+  return (
+    <section id="servicos" className="py-24 bg-apolus-dark/30">
+      <div className="max-w-7xl mx-auto px-6">
+
+        <div className="text-center mb-16 flex flex-col items-center">
+
+          <img
+            src="/img/font/s_font.png"
+            alt="Serviços"
+            className="w-94 md:w-50 object-contain"
+          />
+
+          <p className="text-white/60 mt-6 max-w-2xl mx-auto">
+            Desenvolvemos soluções digitais sob medida para empresas,
+            profissionais e marcas que desejam crescer na internet.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -8 }}
+              className="glass-card border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:border-apolus-green hover:shadow-[0_0_30px_rgba(97,238,69,.18)]"
+            >
+              <div className="w-16 h-16 rounded-2xl bg-apolus-green/10 flex items-center justify-center text-apolus-green mb-6">
+                {service.icon}
+              </div>
+
+              <h3 className="text-2xl font-bold mb-2">
+                {service.title}
+              </h3>
+
+              <span className="text-apolus-green font-semibold">
+                {service.price}
+              </span>
+
+              <p className="text-white/60 mt-5 leading-relaxed">
+                {service.description}
+              </p>
+            </motion.div>
+          ))}
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
 
 const Portfolio = () => {
   const projects = [
@@ -824,6 +884,93 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+              {/* UNIVERSO + MASCOTE */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: 0.2 }}
+                className="relative flex justify-center"
+              >
+                <div className="relative w-full max-w-md aspect-square">
+                  {/* PLANETA GIRANDO ATRÁS */}
+                  <motion.img
+                    src="/img/apolus/internet_trans.png"
+                    className="absolute top-3 left-[8px] w-full h-full object-contain z-0 opacity-50  drop-shadow-[0_0_20px_purple]"
+                    animate={{
+                      rotate: -360,
+                    }}
+                    style={{ scale: 0.95 }}
+                    transition={{
+                      duration: 50,
+                      repeat: Infinity,
+                      ease: 'linear',
+                    }}
+                  />
+
+                  {/* ELEMENTOS DO UNIVERSO */}
+                  <svg
+                    viewBox="0 0 500 500"
+                    className="absolute -inset-9 w-[120%] h-[120%] z-5"
+                  >
+                    {/* Anel orbital */}
+                    <motion.circle
+                      cx="250"
+                      cy="250"
+                      r="240"
+                      fill="none"
+                      stroke="#236506"
+                      strokeOpacity="0.3"
+                      strokeWidth="2"
+                      strokeDasharray="8 10"
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+                      style={{ originX: '50%', originY: '50%' }}
+                    />
+
+                    {/* estrelas */}
+                    <motion.circle
+                      cx="250"
+                      cy="30"
+                      r="6"
+                      fill="#FFC300"
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
+                      style={{ originX: '250px', originY: '250px' }}
+                    />
+                    {/* estrelas */}
+                    <motion.circle
+                      cx="250"
+                      cy="30"
+                      r="6"
+                      fill="#FFC300"
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
+                      style={{ originX: '-250px', originY: '-250px' }}
+                    />
+                  </svg>
+
+                  {/* CHÃO DE LUZ */}
+                  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-72 h-24 bg-apolus-green/30 blur-2xl rounded-full opacity-60" />
+
+                  {/* MASCOTE */}
+                  <motion.img
+                    src="/img/apolus/apolus_trans.png"
+                    className="absolute inset-0 w-[70%] h-[70%] object-contain z-10 mx-auto my-auto"
+                    animate={{
+                      y: [0, -20, 0],
+                      rotate: [0, 2, -2, 0],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: 'easeInOut',
+                    }}
+                  />
+
+                  {/* GLOW FRONTAL */}
+                  <div className="absolute inset-0 bg-apolus-purple/20 blur-3xl -z-10 rounded-full" />
+                </div>
+              </motion.div>
             </div>
           </div>
 
@@ -964,6 +1111,14 @@ const Footer = () => {
               </li>
               <li>
                 <a
+                  href="#servicos"
+                  className="hover:text-apolus-green transition-colors"
+                >
+                  Técnologias
+                </a>
+              </li>
+              <li>
+                <a
                   href="#portfolio"
                   className="hover:text-apolus-green transition-colors"
                 >
@@ -1041,6 +1196,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <About />
+      <Technologies />
       <Services />
       <Portfolio />
       <Process />
