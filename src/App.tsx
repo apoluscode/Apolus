@@ -567,11 +567,18 @@ const Services = () => {
 const Portfolio = () => {
   const projects = [
     {
-      title: 'Vitor Araujo Sociedade Individual de Advogacia',
+      title: 'Advogado Eduardo Henrique Montenegro',
       category: 'Landing Page',
       image:
         '/img/portf/portf_1.png',
-      link: 'https://victor-araujo-advogado-sepia.vercel.app/',
+      link: 'https://advogado-flame.vercel.app/',
+    },
+        {
+      title: 'ClimaPrime Soluções em Climatização',
+      category: 'Site Institucional',
+      image:
+        '/img/portf/portf_2.png',
+      link: 'https://nucleoar-01.vercel.app/',
     },
 
   ];
@@ -1085,7 +1092,7 @@ const Footer = () => {
             />
 
             <p className="text-white/40 text-sm max-w-sm">
-              Transformando o complexo em simples. Sua equipe de freelancers
+              Transformando o complexo em simples. Sua equipe de desenvolvedores 
               especializada em entregar excelência digital.
             </p>
           </div>
@@ -1181,7 +1188,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/20">
-          <p>© 2026 Apolus Freelance Squad. Todos os direitos reservados.</p>
+          <p>© 2026 Apolus. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
