@@ -126,6 +126,19 @@ const Navbar = () => {
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-black">
+
+      {/* GRID */}
+      <div
+        className="
+    absolute inset-0
+    z-0
+    pointer-events-none
+    opacity-9
+    bg-[linear-gradient(to_right,#8B5CF6_1px,transparent_1px),linear-gradient(to_bottom,#8B5CF6_1px,transparent_1px)]
+    bg-[length:64px_64px]
+  "
+      />
+
       {/* BACKGROUND BLURS PROFUNDIDADE */}
       <div className="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-apolus-purple/20 blur-[160px] rounded-full" />
       <div className="absolute bottom-1/4 -right-20 w-[600px] h-[600px] bg-apolus-green/10 blur-[160px] rounded-full" />
@@ -152,9 +165,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg text-white/60 mb-8 max-w-lg">
-            Somos a Apolus, um estúdio digital independente que cria sites
-            modernos, rápidos e estrategicamente planejados para destacar sua
-            marca e gerar oportunidades reais no ambiente online.
+            Criamos experiências digitais que unem estratégia, design e tecnologia para transformar visitantes em clientes e fortalecer a presença da sua empresa no ambiente digital.
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 w-full max-w-md mx-auto md:mx-0">
@@ -173,9 +184,21 @@ const Hero = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
+          initial={{ opacity: 0, scale: 0.9, y: 40 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: [0, -12, 0],
+          }}
+          transition={{
+            opacity: { duration: 1 },
+            scale: { duration: 1 },
+            y: {
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
+          }}
           className="relative flex justify-center"
         >
           <motion.img
@@ -191,6 +214,25 @@ const Hero = () => {
               ease: 'linear',
             }}
           />
+
+          <motion.img
+            src="/img/apolus/webdesign.png"
+            className="absolute inset-0 w-full h-full object-contain z-10"
+            style={{ scale: 1.5 }}
+            animate={{
+              y: [0, -18, 0],
+              rotate: [0, 3, -3, 0],
+              x: [0, 6, -6, 0],
+              scale: [1.3, 1.4, 1.3],
+            }}
+            transition={{
+              duration: 7,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+
+
           <div className="relative w-full max-w-3xl aspect-square">
             {/* ELEMENTOS DO UNIVERSO */}
             <svg
@@ -202,22 +244,6 @@ const Hero = () => {
             {/* CHÃO DE LUZ */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-72 h-24 bg-apolus-green/30 blur-2xl rounded-full opacity-60" />
 
-            {/* MOCKUP */}
-            <motion.img
-              src="/img/apolus/webdesign.png"
-              className="absolute inset-0 w-full h-full object-contain z-10"
-              animate={{
-                y: [0, -20, 0],
-                rotate: [0, 2, -2, 0],
-              }}
-              style={{ scale: 1.1 }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: 'easeInOut',
-              }}
-
-            />
 
 
             {/* GLOW FRONTAL */}
@@ -573,7 +599,7 @@ const Portfolio = () => {
         '/img/portf/portf_1.png',
       link: 'https://advogado-flame.vercel.app/',
     },
-        {
+    {
       title: 'ClimaPrime Soluções em Climatização',
       category: 'Site Institucional',
       image:
@@ -1092,7 +1118,7 @@ const Footer = () => {
             />
 
             <p className="text-white/40 text-sm max-w-sm">
-              Transformando o complexo em simples. Sua equipe de desenvolvedores 
+              Transformando o complexo em simples. Sua equipe de desenvolvedores
               especializada em entregar excelência digital.
             </p>
           </div>
