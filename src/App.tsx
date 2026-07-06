@@ -25,7 +25,7 @@ import {
 } from 'lucide-react';
 import { useState, useEffect, FormEvent } from 'react';
 
-const CONTACT_INBOX = 'apolus03@gmail.com';
+const CONTACT_INBOX = 'apoluscode@gmail.com';
 /** Chave do formulário no FormSubmit (veio no email de ativação; não expor o email na URL do POST). */
 const FORMSUBMIT_FORM_ID = '4349be602e8890c4b9787fadace0bc42';
 
@@ -223,7 +223,7 @@ const Hero = () => {
               y: [0, -18, 0],
               rotate: [0, 3, -3, 0],
               x: [0, 6, -6, 0],
-              scale: [1.3, 1.4, 1.3],
+              scale: [1.2, 1.1, 1.2],
             }}
             transition={{
               duration: 7,
@@ -848,7 +848,7 @@ const Contact = () => {
     } catch (err) {
       if (err instanceof Error && err.message === 'ACTIVATION_PENDING') {
         setSubmitError(
-          'O formulário ainda não foi ativado. Abra o email que o FormSubmit enviou para apolus03@gmail.com, clique em “Activate Form” e tente de novo. Confira também lixo eletrônico.'
+          'O formulário ainda não foi ativado. Abra o email que o FormSubmit enviou para apoluscode@gmail.com, clique em “Activate Form” e tente de novo. Confira também lixo eletrônico.'
         );
       } else if (err instanceof Error && err.message === 'OPEN_VIA_SERVER') {
         setSubmitError(
