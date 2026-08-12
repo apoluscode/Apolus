@@ -63,6 +63,7 @@ export function Technologies() {
             <div className="max-w-8xl mx-auto px-6">
                 {/* Título da seção "Tecnologias & Competências" */}
                 <div className="text-center mb-16 flex flex-col items-center">
+                    <h2 className="sr-only">Tecnologias e Competências</h2>
                     <img
                         src="/img/font/tc_font.png"
                         alt="Tecnologias & Competências"
@@ -86,8 +87,9 @@ export function Technologies() {
                             <div className="flex items-center gap-3 mb-3">
                                 <img
                                     src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZndld21zNjdxaTdyMGFodHpwcWQzbDV0dWFqcWJyaWVzd241M3Q1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RjpwS3HEFqgdALfARj/giphy.gif"
-                                    alt="plumbob gif"
+                                    alt=""
                                     className="w-6 h-6"
+                                    aria-hidden="true"
                                 />
 
                                 <div>

@@ -8,6 +8,7 @@ export function Contact() {
         <section id="contato" className="py-24">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-col items-center">
+                    <h2 className="sr-only">Contato</h2>
                     <img
                         src="/img/font/vc_font.png"
                         alt="Vamos Conversar?"
@@ -15,8 +16,7 @@ export function Contact() {
                     />
 
                     <p className="text-white/60 mb-12 text-center">
-                        Tem um projeto em mente? Preencha o formulário ou entre em contato
-                        pelos nossos canais oficiais.
+                        Tem um projeto em mente? Fale com a Apolus Code pelos nossos canais oficiais.
                     </p>
 
                     <div className="space-y-24">
@@ -29,15 +29,21 @@ export function Contact() {
                                             WhatsApp
                                         </p>
                                         <a
-                                            href="https://wa.me/5511913491733?text=Olá, gostaria de agendar uma conversa com vocês, vim pelo site da Apolus."
+                                            href="https://wa.me/5511913491733?text=Olá, gostaria de agendar uma conversa com vocês, vim pelo site da Apolus Code."
                                             className="hover:text-apolus-green transition-colors duration-500"
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                         >
                                             <p className="font-bold">+55 (11) 91349-1733</p>
                                         </a>
                                     </div>
                                 </div>
-                                <a href="https://wa.me/5511913491733?text=Olá, gostaria de agendar uma conversa com vocês, vim pelo site da Apolus." target="_blank" className="w-full px-6 py-2 rounded-xl flex items-center justify-center text-apolus-green gap-2">
+                                <a
+                                    href="https://wa.me/5511913491733?text=Olá, gostaria de agendar uma conversa com vocês, vim pelo site da Apolus Code."
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full px-6 py-2 rounded-xl flex items-center justify-center text-apolus-green gap-2"
+                                >
                                     <p>Chamar no WhatsApp</p>
                                     <ArrowRight size={18} className="mt-0.5" />
                                 </a>
@@ -76,6 +82,8 @@ export function Contact() {
                                 {/* PLANETA GIRANDO ATRÁS */}
                                 <motion.img
                                     src="/img/apolus/internet_trans.png"
+                                    alt=""
+                                    aria-hidden="true"
                                     className="absolute top-[3%] left-[2%] w-full h-full object-contain z-0 opacity-50 drop-shadow-[0_0_1.25rem_purple]"
                                     animate={{
                                         rotate: -360,
@@ -137,6 +145,7 @@ export function Contact() {
                                 {/* MASCOTE */}
                                 <motion.img
                                     src="/img/apolus/apolus_trans.png"
+                                    alt="Mascote da Apolus Code"
                                     className="absolute inset-0 w-[70%] h-[70%] object-contain z-10 mx-auto my-auto"
                                     animate={{
                                         y: ['0%', '-5%', '0%'],

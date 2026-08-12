@@ -22,6 +22,7 @@ export function Hero() {
                     transition={{ duration: 0.8 }}
                 >
                     <h1 className="text-5xl lg:text-7xl font-display font-bold leading-[1.05] mb-6">
+                        <span className="sr-only">Apolus Code — </span>
                         Transformamos
                         <br />
                         ideias em{" "}
@@ -33,7 +34,7 @@ export function Hero() {
                     </h1>
 
                     <p className="text-lg text-white/60 mb-8 max-w-lg">
-                        Criamos experiências digitais que unem estratégia, design e tecnologia para transformar visitantes em clientes e fortalecer a presença da sua empresa no ambiente digital.
+                        A Apolus Code cria experiências digitais que unem estratégia, design e tecnologia para transformar visitantes em clientes e fortalecer a presença da sua empresa no ambiente digital.
                     </p>
 
                     <div className="flex flex-col lg:flex-row gap-4 w-full max-w-md mx-auto lg:mx-0">
@@ -71,6 +72,8 @@ export function Hero() {
                 >
                     <motion.img
                         src="/img/apolus/internet_trans.png"
+                        alt=""
+                        aria-hidden="true"
                         className="absolute top-3 left-[8px] w-full h-full object-contain z-0 opacity-50  drop-shadow-[0_0_20px_purple]"
                         animate={{
                             rotate: -360,
@@ -85,6 +88,7 @@ export function Hero() {
 
                     <motion.img
                         src="/img/apolus/webdesign.png"
+                        alt="Ilustração de desenvolvimento web e design digital da Apolus Code"
                         className="absolute inset-0 w-full h-full object-contain z-10"
                         style={{ scale: 1.5 }}
                         animate={{

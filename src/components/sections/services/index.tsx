@@ -45,6 +45,7 @@ export function Services() {
         <section id="servicos" className="py-24 bg-apolus-dark/30">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16 flex flex-col items-center">
+                    <h2 className="sr-only">Serviços</h2>
                     <img
                         src="/img/font/s_font.png"
                         alt="Serviços"

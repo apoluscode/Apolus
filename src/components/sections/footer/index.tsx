@@ -8,13 +8,13 @@ export function Footer() {
                     <div className="col-span-2">
                         <img
                             src="/img/apolus/apolus_name.png"
-                            alt="Girl in a jacket"
+                            alt="Apolus Code"
                             width="120"
                             height="200"
                         />
 
                         <p className="text-white/40 text-sm max-w-sm">
-                            Transformando o complexo em simples. Sua equipe de desenvolvedores
+                            Transformando o complexo em simples. A Apolus Code é
                             especializada em entregar excelência digital.
                         </p>
                     </div>
@@ -40,10 +40,10 @@ export function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#servicos"
+                                    href="#tecnologias"
                                     className="hover:text-apolus-green transition-colors"
                                 >
-                                    Técnologias
+                                    Tecnologias
                                 </a>
                             </li>
                             <li>
@@ -70,13 +70,15 @@ export function Footer() {
 
                         <ul className="space-y-3 text-sm text-white/40">
                             <li className="mb-1">
-                                <a>Fabiano Santos</a>
+                                <span>Fabiano Santos</span>
                             </li>
                             <div className="flex gap-4 mb-4">
                                 <a
-                                    href="http://github.com/santosfabin/"
+                                    href="https://github.com/santosfabin/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-purple hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub de Fabiano Santos"
                                 >
                                     <Github size={20} />
                                 </a>
@@ -85,19 +87,23 @@ export function Footer() {
                                     href="https://www.linkedin.com/in/santosfabin/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-purple hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn de Fabiano Santos"
                                 >
                                     <Linkedin size={20} />
                                 </a>
                             </div>
 
                             <li className="mb-1">
-                                <a>Kaique Araujo Fernandes</a>
+                                <span>Kaique Araujo Fernandes</span>
                             </li>
                             <div className="flex gap-4">
                                 <a
                                     href="https://github.com/KaicolaDS"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-green hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub de Kaique Fernandes"
                                 >
                                     <Github size={20} />
                                 </a>
@@ -105,19 +111,23 @@ export function Footer() {
                                     href="https://www.linkedin.com/in/kaique-araujo-fernandes/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-green hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn de Kaique Fernandes"
                                 >
                                     <Linkedin size={20} />
                                 </a>
                             </div>
 
                             <li className="mb-1">
-                                <a>Gustavo Soares</a>
+                                <span>Gustavo Soares</span>
                             </li>
                             <div className="flex gap-4">
                                 <a
                                     href="https://github.com/soaresgus"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-blue hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub de Gustavo Soares"
                                 >
                                     <Github size={20} />
                                 </a>
@@ -125,6 +135,8 @@ export function Footer() {
                                     href="https://www.linkedin.com/in/soaresgus/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-blue hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn de Gustavo Soares"
                                 >
                                     <Linkedin size={20} />
                                 </a>
@@ -134,7 +146,7 @@ export function Footer() {
                 </div>
 
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/20">
-                    <p>© 2026 Apolus. Todos os direitos reservados.</p>
+                    <p>© 2026 Apolus Code. Todos os direitos reservados.</p>
                 </div>
             </div>
         </footer>

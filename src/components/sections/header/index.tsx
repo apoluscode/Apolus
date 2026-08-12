@@ -31,7 +31,7 @@ export function Header() {
                         {/* Logo e Mascote */}
                         <img
                             src="/img/apolus/apolus_name.png"
-                            alt="Girl in a jacket"
+                            alt="Apolus Code"
                             width="700"
                             height="900"
                         />

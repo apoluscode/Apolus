@@ -4,7 +4,7 @@ export function About() {
     const items = [
         {
             title: 'Sobre',
-            text: 'A Apolus é uma dupla de desenvolvedores web focada em criar experiências digitais modernas, rápidas e visualmente marcantes.',
+            text: 'A Apolus Code é uma equipe de desenvolvedores focada em criar experiências digitais modernas, rápidas e visualmente marcantes.',
         },
         {
             title: 'Objetivo',
@@ -24,6 +24,7 @@ export function About() {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-col gap-16 items-center">
                     <div className="space-y-6">
+                        <h2 className="sr-only">Quem Somos</h2>
                         <img
                             src="/img/font/qs_font.png"
                             alt="Quem Somos"
@@ -36,8 +37,9 @@ export function About() {
                                     <div className="mt-1 p-2 rounded-xl">
                                         <img
                                             src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZndld21zNjdxaTdyMGFodHpwcWQzbDV0dWFqcWJyaWVzd241M3Q1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RjpwS3HEFqgdALfARj/giphy.gif"
-                                            alt="Cristal"
+                                            alt=""
                                             className="min-w-7 h-7"
+                                            aria-hidden="true"
                                         />
                                     </div>
 
@@ -70,6 +72,8 @@ export function About() {
                                     href="https://github.com/KaicolaDS"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-green hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub de Kaique Fernandes"
                                 >
                                     <Github size={20} />
                                 </a>
@@ -78,6 +82,8 @@ export function About() {
                                     href="https://www.linkedin.com/in/kaique-araujo-fernandes/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-green hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn de Kaique Fernandes"
                                 >
                                     <Linkedin size={20} />
                                 </a>
@@ -93,16 +99,18 @@ export function About() {
 
                                 <img
                                     src="/img/devs/fabiano_card.png"
-                                    alt="Nome - Desenvolvedor"
+                                    alt="Fabiano Santos - Desenvolvedor"
                                     className="relative rounded-2xl w-64 h-64 aspect-square object-cover  group-hover:grayscale-0 transition duration-500"
                                 />
                             </div>
                             {/*Redes Sociais - Fabiano*/}
                             <div className="flex gap-4 justify-center">
                                 <a
-                                    href="http://github.com/santosfabin/"
+                                    href="https://github.com/santosfabin/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-purple hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub de Fabiano Santos"
                                 >
                                     <Github size={20} />
                                 </a>
@@ -110,6 +118,8 @@ export function About() {
                                     href="https://www.linkedin.com/in/santosfabin/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-purple hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn de Fabiano Santos"
                                 >
                                     <Linkedin size={20} />
                                 </a>
@@ -124,16 +134,18 @@ export function About() {
 
                                 <img
                                     src="/img/devs/gustavo_card.png"
-                                    alt="Nome - Desenvolvedor"
+                                    alt="Gustavo Soares - Desenvolvedor"
                                     className="relative rounded-2xl w-64 h-64 aspect-square object-cover  group-hover:grayscale-0 transition duration-500"
                                 />
                             </div>
                             {/*Redes Sociais - Gustavo*/}
                             <div className="flex gap-4 justify-center">
                                 <a
-                                    href="http://github.com/soaresgus/"
+                                    href="https://github.com/soaresgus/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-blue hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub de Gustavo Soares"
                                 >
                                     <Github size={20} />
                                 </a>
@@ -141,6 +153,8 @@ export function About() {
                                     href="https://www.linkedin.com/in/soaresgus/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-blue hover:text-apolus-black transition-all"
                                     target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn de Gustavo Soares"
                                 >
                                     <Linkedin size={20} />
                                 </a>

@@ -23,6 +23,7 @@ export function Portfolio() {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-col items-center mb-16 gap-6">
                     <div>
+                        <h2 className="sr-only">Portfólio</h2>
                         <img
                             src="/img/font/p_font.png"
                             alt="Portfólio"

@@ -26,6 +26,7 @@ export function Process() {
         <section id="processo" className="py-24 bg-apolus-dark/50">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-col items-center text-center mb-16">
+                    <h2 className="sr-only">Nosso Processo</h2>
                     <img
                         src="/img/font/np_font.png"
                         alt="Nosso Processo"
