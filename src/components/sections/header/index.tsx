@@ -23,9 +23,9 @@ export function Header() {
 
     return (
         <header
-            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-apolus-black/80 backdrop-blur-lg py-4 border-bottom border-white/5' : 'bg-transparent py-6'}`}
+            className={`fixed top-0 left-0 w-screen z-50 transition-all duration-300 ${isScrolled ? 'bg-apolus-black/80 backdrop-blur-lg py-4 border-bottom border-white/5' : 'bg-transparent py-6'}`}
         >
-            <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div className="px-6 flex justify-between items-center">
                 <div className="flex items-center gap-2 group cursor-pointer">
                     <div className="w-40 h-20 rounded-lg flex items-center justify-center">
                         {/* Logo e Mascote */}
@@ -40,7 +40,7 @@ export function Header() {
                 </div>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center gap-8">
+                <nav className="hidden lg:flex items-center gap-8">
                     {navLinks.map((link) => (
                         <a
                             key={link.name}
@@ -51,13 +51,13 @@ export function Header() {
                         </a>
                     ))}
                     <a href="#contato" className="btn-primary py-2 px-6 text-sm">
-                        Orçamento
+                        Solicitar Orçamento
                     </a>
                 </nav>
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden text-white"
+                    className="lg:hidden text-white"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? <X /> : <Menu />}
@@ -69,7 +69,7 @@ export function Header() {
                 <motion.nav
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="absolute top-full left-0 w-full bg-apolus-dark border-b border-white/10 p-6 flex flex-col gap-4 md:hidden"
+                    className="absolute top-full left-0 w-full bg-apolus-dark border-b border-white/10 p-6 flex flex-col gap-4 lg:hidden"
                 >
                     {navLinks.map((link) => (
                         <a
@@ -86,7 +86,7 @@ export function Header() {
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="btn-primary text-center"
                     >
-                        Orçamento
+                        Solicitar Orçamento
                     </a>
                 </motion.nav>
             )}

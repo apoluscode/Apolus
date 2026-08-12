@@ -76,6 +76,7 @@ export function Footer() {
                                 <a
                                     href="http://github.com/santosfabin/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-purple hover:text-apolus-black transition-all"
+                                    target="_blank"
                                 >
                                     <Github size={20} />
                                 </a>
@@ -83,6 +84,7 @@ export function Footer() {
                                 <a
                                     href="https://www.linkedin.com/in/santosfabin/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-purple hover:text-apolus-black transition-all"
+                                    target="_blank"
                                 >
                                     <Linkedin size={20} />
                                 </a>
@@ -95,12 +97,34 @@ export function Footer() {
                                 <a
                                     href="https://github.com/KaicolaDS"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-green hover:text-apolus-black transition-all"
+                                    target="_blank"
                                 >
                                     <Github size={20} />
                                 </a>
                                 <a
                                     href="https://www.linkedin.com/in/kaique-araujo-fernandes/"
                                     className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-green hover:text-apolus-black transition-all"
+                                    target="_blank"
+                                >
+                                    <Linkedin size={20} />
+                                </a>
+                            </div>
+
+                            <li className="mb-1">
+                                <a>Gustavo Soares</a>
+                            </li>
+                            <div className="flex gap-4">
+                                <a
+                                    href="https://github.com/soaresgus"
+                                    className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-blue hover:text-apolus-black transition-all"
+                                    target="_blank"
+                                >
+                                    <Github size={20} />
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/soaresgus/"
+                                    className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-apolus-blue hover:text-apolus-black transition-all"
+                                    target="_blank"
                                 >
                                     <Linkedin size={20} />
                                 </a>

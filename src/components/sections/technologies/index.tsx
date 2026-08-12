@@ -16,25 +16,25 @@ export function Technologies() {
         },
         {
             title: 'Frontend',
-            stack: 'HTML5, CSS3, React, TypeScript e Next.js',
+            stack: 'HTML5, CSS3, React, TypeScript, Next.js, Vue.JS e Angular',
             desc: 'Criamos interfaces modernas, organizadas e fáceis de usar, garantindo que seu site seja bonito, intuitivo e funcione perfeitamente em qualquer dispositivo.',
             color: 'border-apolus-green/20',
         },
         {
             title: 'Backend & Runtime',
-            stack: 'Node.js, PHP, Laravel e Python',
+            stack: 'Node.js, NestJS, PHP, Laravel e Python',
             desc: 'Desenvolvemos toda a parte interna do site para garantir que ele funcione com segurança, rapidez e estabilidade, mesmo com muitos acessos ao mesmo tempo. Utilizamos também automações e recursos modernos para tornar processos mais inteligentes e eficientes.',
             color: 'border-apolus-yellow/20',
         },
         {
             title: 'Banco de Dados',
-            stack: 'PostgreSQL e MySQL',
+            stack: 'PostgreSQL, MySQL, MongoDB e Redis',
             desc: 'Estruturamos e protegemos as informações do seu negócio para que tudo fique organizado, seguro e acessível sempre que necessário.',
             color: 'border-apolus-purple/20',
         },
         {
             title: 'Autenticação & Segurança',
-            stack: 'JSON Web Token (JWT)',
+            stack: 'Segurança em API, JWT, OAuth2.0, SSO e SAML',
             desc: 'Implementamos camadas de segurança para proteger dados e garantir que apenas pessoas autorizadas tenham acesso a áreas específicas do sistema.',
             color: 'border-apolus-yellow/20',
         },
@@ -60,7 +60,7 @@ export function Technologies() {
 
     return (
         <section id="tecnologias" className="py-24">
-            <div className="max-w-8xl mx-auto px-14">
+            <div className="max-w-8xl mx-auto px-6">
                 {/* Título da seção "Tecnologias & Competências" */}
                 <div className="text-center mb-16 flex flex-col items-center">
                     <img
@@ -76,7 +76,7 @@ export function Technologies() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:px-48">
                     {technologies.map((tech, i) => (
                         <motion.div
                             key={i}

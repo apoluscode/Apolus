@@ -10,15 +10,25 @@
   --color-apolus-yellow: #FFC300;
   --color-apolus-black: #0A0A0A;
   --color-apolus-dark: #121212;
+  --color-apolus-blue: #57bfd9;
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-apolus-black text-white font-sans antialiased selection:bg-apolus-green selection:text-apolus-black;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
+  }
+
+  /* Offset do header fixo ao navegar por âncoras */
+  section[id] {
+    scroll-margin-top: 2.5rem;
   }
 }
 

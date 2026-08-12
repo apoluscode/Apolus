@@ -21,15 +21,15 @@ export function Portfolio() {
     return (
         <section id="portfolio" className="py-24 bg-apolus-dark/30">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div className="flex flex-col items-center mb-16 gap-6">
                     <div>
                         <img
                             src="/img/font/p_font.png"
                             alt="Portfólio"
-                            className="w-34 md:w-54 mb-4 object-contain mx-auto md:mx-0"
+                            className="w-64 md:w-54 mb-4 object-contain mx-auto"
                         />
 
-                        <p className="text-white/60 mb-0 text-center md:text-left">
+                        <p className="text-white/60 mb-0 text-center">
                             Conheça alguns dos nosso projetos recentes que mostram como
                             transformamos ideias em soluções digitais modernas e eficientes.
                         </p>
@@ -54,8 +54,8 @@ export function Portfolio() {
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
 
-                            <div className="absolute inset-0 bg-gradient-to-t from-apolus-black via-apolus-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
-                                <span className="text-apolus-green text-xs font-bold uppercase tracking-widest mb-2">
+                            <div className="absolute inset-0 bg-gradient-to-t from-apolus-black via-apolus-black/20 to-transparent opacity-0 not-lg:opacity-100 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 not-lg:p-4">
+                                <span className="bg-[#4CA525] w-fit rounded-full px-4 py-0.5 text-white text-xs font-medium uppercase tracking-widest mb-2">
                                     {project.category}
                                 </span>
                                 <h3 className="text-2xl font-bold">{project.title}</h3>

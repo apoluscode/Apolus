@@ -36,21 +36,23 @@ export function Process() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-5 gap-8 relative">
+                <div className="grid lg:grid-cols-5 gap-8 relative">
                     {/* Connector Line (Desktop) */}
-                    <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-white/5 -z-10" />
+                    <div className="hidden lg:block absolute top-8 left-0 w-full h-0.5 bg-white/5 -z-10" />
 
                     {steps.map((step, i) => (
-                        <div key={i} className="text-center group">
-                            <div className="w-16 h-16 bg-apolus-dark border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:border-apolus-green transition-colors duration-300">
+                        <div key={i} className="lg:text-center group flex flex-row lg:flex-col">
+                            <div className="min-w-16 min-h-16 bg-apolus-dark border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:border-apolus-green transition-colors duration-300">
                                 <span className="text-2xl font-display font-bold text-apolus-green">
                                     {i + 1}
                                 </span>
                             </div>
-                            <h3 className="text-lg font-bold mb-3">{step.title}</h3>
-                            <p className="text-sm text-white/50 leading-relaxed">
-                                {step.desc}
-                            </p>
+                            <div className="not-lg:ml-6">
+                                <h3 className="text-lg font-bold mb-3 not-lg:text-2xl not-lg:font-display not-lg:text-apolus-green">{step.title}</h3>
+                                <p className="text-sm text-white/50 leading-relaxed">
+                                    {step.desc}
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>

@@ -1,40 +1,40 @@
-import { MonitorSmartphone, Globe, Package, ShoppingCart, LayoutDashboard, ShieldCheck } from "lucide-react";
+import { MonitorSmartphone, Globe, Package, ShoppingCart, LayoutDashboard, ShieldCheck, Wrench } from "lucide-react";
 import { motion } from "motion/react";
 
 export function Services() {
     const services = [
         {
-            icon: <MonitorSmartphone size={32} />,
-            title: 'Landing Pages',
-            description:
-                'Páginas modernas e focadas em conversão para campanhas, produtos e captação de clientes.',
-        },
-        {
-            icon: <Globe size={32} />,
+            icon: <Globe size={28} />,
             title: 'Site Institucional',
             description:
                 'Sites profissionais para apresentar sua empresa, serviços e fortalecer sua presença digital.',
         },
         {
-            icon: <Package size={32} />,
-            title: 'Catálogo de Produtos',
+            icon: <MonitorSmartphone size={28} />,
+            title: 'Aplicativos Mobile',
             description:
-                'Exiba seus produtos com sistema de busca, painel administrativo e gerenciamento completo.',
+                'Aplicativos móveis para iOS e Android, com design moderno e funcionalidades personalizadas.',
         },
         {
-            icon: <ShoppingCart size={32} />,
+            icon: <ShoppingCart size={28} />,
             title: 'Loja Virtual',
             description:
                 'E-commerce completo com carrinho, pagamentos, painel administrativo e gestão de pedidos.',
         },
         {
-            icon: <LayoutDashboard size={32} />,
-            title: 'Sistema Web',
+            icon: <Package size={28} />,
+            title: 'Sistemas de Gerenciamento e Gestão',
             description:
-                'Sistemas personalizados com login, banco de dados, automações e áreas administrativas.',
+                'Sistemas de gerenciamento completo para sua empresa, com controle de estoque, vendas, clientes, fornecedores, funcionários, entre outros.',
         },
         {
-            icon: <ShieldCheck size={32} />,
+            icon: <Wrench size={28} />,
+            title: 'Modernização de sistemas legados',
+            description:
+                'Modernização de sistemas legados já existentes para melhorar a performance, segurança e usabilidade.',
+        },
+        {
+            icon: <ShieldCheck size={28} />,
             title: 'Suporte & Manutenção',
             description:
                 'Atualizações, monitoramento, correções e suporte contínuo após a entrega do projeto.',
@@ -44,13 +44,11 @@ export function Services() {
     return (
         <section id="servicos" className="py-24 bg-apolus-dark/30">
             <div className="max-w-7xl mx-auto px-6">
-
                 <div className="text-center mb-16 flex flex-col items-center">
-
                     <img
                         src="/img/font/s_font.png"
                         alt="Serviços"
-                        className="w-94 md:w-50 object-contain"
+                        className="w-64 md:w-50 object-contain"
                     />
 
                     <p className="text-white/60 mt-6 max-w-2xl mx-auto">
@@ -67,13 +65,14 @@ export function Services() {
                             whileHover={{ y: -8 }}
                             className="glass-card border border-white/10 rounded-3xl p-8 transition-all duration-300 hover:border-apolus-green hover:shadow-[0_0_30px_rgba(97,238,69,.18)]"
                         >
-                            <div className="w-16 h-16 rounded-2xl bg-apolus-green/10 flex items-center justify-center text-apolus-green mb-6">
-                                {service.icon}
+                            <div className="flex items-center gap-2.5">
+                                <div className="min-w-12 min-h-12 rounded-2xl bg-apolus-green/10 flex items-center justify-center text-apolus-green">
+                                    {service.icon}
+                                </div>
+                                <h3 className="text-xl font-bold">
+                                    {service.title}
+                                </h3>
                             </div>
-
-                            <h3 className="text-2xl font-bold mb-2">
-                                {service.title}
-                            </h3>
 
                             <p className="text-white/60 mt-5 leading-relaxed">
                                 {service.description}

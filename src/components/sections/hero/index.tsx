@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 export function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-black">
+        <section className="relative min-h-screen flex items-center lg:pt-20 pt-32 overflow-hidden bg-black">
             {/* GRID */}
             <div
                 className="absolute inset-0 z-0 pointer-events-none opacity-9 bg-[linear-gradient(to_right,#8B5CF6_1px,transparent_1px),linear-gradient(to_bottom,#8B5CF6_1px,transparent_1px)] bg-[length:64px_64px]"
@@ -36,7 +36,7 @@ export function Hero() {
                         Criamos experiências digitais que unem estratégia, design e tecnologia para transformar visitantes em clientes e fortalecer a presença da sua empresa no ambiente digital.
                     </p>
 
-                    <div className="flex flex-col md:flex-row gap-4 w-full max-w-md mx-auto md:mx-0">
+                    <div className="flex flex-col lg:flex-row gap-4 w-full max-w-md mx-auto lg:mx-0">
                         <a
                             href="#contato"
                             className="btn-primary flex items-center justify-center gap-2 w-full whitespace-nowrap"
