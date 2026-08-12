@@ -10,15 +10,25 @@
   --color-apolus-yellow: #FFC300;
   --color-apolus-black: #0A0A0A;
   --color-apolus-dark: #121212;
+  --color-apolus-blue: #57bfd9;
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-apolus-black text-white font-sans antialiased selection:bg-apolus-green selection:text-apolus-black;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
+  }
+
+  /* Offset do header fixo ao navegar por âncoras */
+  section[id] {
+    scroll-margin-top: 2.5rem;
   }
 }
 
@@ -40,4 +50,16 @@
 
 .btn-secondary {
   @apply px-8 py-3 border-2 border-apolus-purple text-white font-bold rounded-xl transition-all duration-300 hover:bg-apolus-purple/20 active:scale-95;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
